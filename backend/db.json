@@ -1,0 +1,19 @@
+{
+  "books": [
+    {
+      "name": "Cartas na rua ",
+      "price": "15.99",
+      "id": 1
+    },
+    {
+      "id": 2,
+      "name": "Lua Nova",
+      "price": 20.9
+    },
+    {
+      "name": "A insustentável leveza do ser ",
+      "price": "19.99",
+      "id": 3
+    }
+  ]
+}

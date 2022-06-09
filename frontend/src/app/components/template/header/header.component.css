@@ -1,0 +1,31 @@
+.header {
+    height: auto;
+    background-color: #343830;
+    color: rgb(255, 255, 255);
+    display: flex;
+}
+
+.header .logo-head {
+    display: flex;
+    align-items: center;
+    margin: 5px;
+    transition: .2s;
+}
+
+.header .logo-head:hover {
+    transform: scale(1.1);
+    transition: .2s;
+    filter: drop-shadow(5px 5px 0px 5px rgba(0, 0, 0, 0.97));
+}
+
+.header .logo-head span {
+    margin-left: 10px;
+    font-weight: 100;
+    font-size: 2rem;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.v-middle {
+    vertical-align: middle;
+}

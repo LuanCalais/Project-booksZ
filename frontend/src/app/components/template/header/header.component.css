@@ -1,8 +1,9 @@
 .header {
     height: auto;
-    background-color: #343830;
+    background-color: #8C8C8C;
     color: rgb(255, 255, 255);
     display: flex;
+    box-shadow: 5px 9px 23px 5px rgba(0,0,0,0.4);
 }
 
 .header .logo-head {

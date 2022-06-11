@@ -6,3 +6,8 @@
 .container .sidenav a{
     color: #ffffff;
 }
+
+.content{
+    padding: 16px;
+    background-color:#8C8C8C;
+}

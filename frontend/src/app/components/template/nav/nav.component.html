@@ -11,7 +11,7 @@
 
             </a>
             
-            <a mat-list-item routerLink="">
+            <a mat-list-item routerLink="books">
                 <i class="material-icons">
                     book
                 </i>
@@ -23,7 +23,9 @@
         </mat-nav-list>
     </mat-sidenav>
     <mat-sidenav-content class="content">
-        <app-home></app-home>
+
+        <!-- Faz com que seja possível navegar entre os componentes -->
+        <router-outlet></router-outlet>
     </mat-sidenav-content>
 
 </mat-sidenav-container>

@@ -12,6 +12,8 @@ import { MatListModule } from '@angular/material/list';
 import { FooterComponent } from './components/template/footer/footer.component';
 import { NavComponent } from './components/template/nav/nav.component';
 import { HomeComponent } from './view/home/home.component';
+import { BooksCrudComponent } from './view/books-crud/books-crud.component';
+import { MatButtonModule } from '@angular/material/button';
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,6 +21,7 @@ import { HomeComponent } from './view/home/home.component';
     FooterComponent,
     NavComponent,
     HomeComponent,
+    BooksCrudComponent,
   ],
   imports: [
     BrowserModule,
@@ -27,7 +30,8 @@ import { HomeComponent } from './view/home/home.component';
     MatToolbarModule, //Import toolbar angular material
     MatSidenavModule, // Import Side Nav Module
     MatCardModule, // Import Cards 
-    MatListModule // Import List
+    MatListModule, // Import List
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

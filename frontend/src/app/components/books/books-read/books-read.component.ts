@@ -1,4 +1,6 @@
+import { BooksService } from './../books.service';
 import { Component, OnInit } from '@angular/core';
+import { Books } from '../books';
 
 @Component({
   selector: 'app-books-read',
@@ -7,9 +9,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BooksReadComponent implements OnInit {
 
-  constructor() { }
+  // Irá receber o retorno de livros do Backend
+  book!: Books[]; // ! - Significa que não é obrigatoriamente iniciado
 
+  // Aqui ficará a configuração das colunas
+  displayedColumns = ['id', 'name', 'price']; 
+
+  constructor(private booksService: BooksService) { }
+
+  // Ao iniciar...
   ngOnInit(): void {
+
+    this.booksService.read().subscribe(book => {
+      this.book = book;
+    })
   }
 
 }

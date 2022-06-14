@@ -15,6 +15,10 @@ import { HomeComponent } from './view/home/home.component';
 import { BooksCrudComponent } from './view/books-crud/books-crud.component';
 import { MatButtonModule } from '@angular/material/button';
 import { BooksReadComponent } from './components/books/books-read/books-read.component';
+import { MatTableModule} from '@angular/material/table';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatSortModule } from '@angular/material/sort';
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,7 +37,11 @@ import { BooksReadComponent } from './components/books/books-read/books-read.com
     MatSidenavModule, // Import Side Nav Module
     MatCardModule, // Import Cards 
     MatListModule, // Import List
-    MatButtonModule
+    MatButtonModule,
+    HttpClientModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule
   ],
   providers: [],
   bootstrap: [AppComponent]

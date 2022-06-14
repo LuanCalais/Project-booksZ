@@ -14,6 +14,7 @@ import { NavComponent } from './components/template/nav/nav.component';
 import { HomeComponent } from './view/home/home.component';
 import { BooksCrudComponent } from './view/books-crud/books-crud.component';
 import { MatButtonModule } from '@angular/material/button';
+import { BooksReadComponent } from './components/books/books-read/books-read.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,6 +23,7 @@ import { MatButtonModule } from '@angular/material/button';
     NavComponent,
     HomeComponent,
     BooksCrudComponent,
+    BooksReadComponent,
   ],
   imports: [
     BrowserModule,

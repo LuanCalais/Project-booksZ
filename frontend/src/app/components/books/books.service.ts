@@ -19,6 +19,4 @@ export class BooksService {
     return this.http.get<Books[]>(this.baseUrl);
   }
 
-
-
 }

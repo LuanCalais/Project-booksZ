@@ -9,7 +9,10 @@ export class BooksCrudComponent implements OnInit {
 
   constructor() { }
 
+  teste:number = 1;
+
   ngOnInit(): void {
   }
+
 
 }

@@ -19,4 +19,11 @@ export class BooksService {
     return this.http.get<Books[]>(this.baseUrl);
   }
 
+  // Método da service que irá fazer o Create no backend
+  create(books: Books): Observable<Books>{
+    return this.http.post<Books>(this.baseUrl, books).pipe(
+      map(obj => obj)
+    );
+  }
+
 }

@@ -1,0 +1,15 @@
+mat-form-field{
+    display: block;
+    width: 30%;
+}
+
+mat-card button{
+    display: block;
+    width: 30%;
+}
+
+mat-card .btn-danger{
+    margin-top: 10px;
+    color: #fff;
+    background-color: rgb(235, 79, 79);
+}

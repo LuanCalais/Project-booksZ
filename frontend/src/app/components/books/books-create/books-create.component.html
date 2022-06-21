@@ -1,14 +1,24 @@
 <mat-card>
-    <mat-card-title>Novo Livro</mat-card-title>
+    <mat-card-title>New BooksZ :)</mat-card-title>
 
     <form>
         <mat-form-field>
             <input matInput placeholder="Title" [(ngModel)]="book.name" name="nome">
         </mat-form-field>
+
+        <mat-form-field>
+            <input matInput placeholder="Price" [(ngModel)]="book.price" name="price">
+        </mat-form-field>
+
     </form>
 
-    <button mat-raised-button (click)="createBook()" color="secondary">
+    <button mat-raised-button (click)="createBook(book)" color="primary">
         Salvar
     </button>
+
+    <button mat-raised-button (click)="cancelProduct()" class="btn-danger">
+        Cancelar
+    </button>
+    
 
 </mat-card>

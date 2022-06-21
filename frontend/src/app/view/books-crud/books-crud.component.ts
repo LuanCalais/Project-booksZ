@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-books-crud',
@@ -7,11 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BooksCrudComponent implements OnInit {
 
-  constructor() { }
-
-  teste:number = 1;
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
+  }
+
+  navigateToProductCreate(): void {
+
+    // Rota configurada em app-routing.module.ts
+    this.router.navigate(['books/create'])
   }
 
 

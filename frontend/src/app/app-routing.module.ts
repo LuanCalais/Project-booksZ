@@ -1,3 +1,4 @@
+import { BooksCreateComponent } from './components/books/books-create/books-create.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
@@ -11,6 +12,10 @@ const routes: Routes = [{
 {
   path: "books",
   component: BooksCrudComponent
+},
+{
+  path: "books/create",
+  component: BooksCreateComponent
 }
 ];
 

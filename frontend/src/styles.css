@@ -10,3 +10,14 @@ body {
     /* font-family: Roboto, "Helvetica Neue", sans-serif; */
     background-color: #ffeec3;
 }
+
+/* Estilo Mensagem de retorno de sucesso */
+.msg-success{
+    background-color: #28a745;
+    color: #fff;
+}
+
+.msg-error{
+    background-color: #e35e6b;
+    color: #fff;
+}

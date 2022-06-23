@@ -24,6 +24,21 @@
       "id": 5,
       "name": "Harry Potter",
       "price": "123.23"
+    },
+    {
+      "id": 6,
+      "name": "Livro de teste ",
+      "price": "12,23"
+    },
+    {
+      "id": 7,
+      "name": "teste ",
+      "price": "213"
+    },
+    {
+      "id": 8,
+      "name": "123",
+      "price": "123"
     }
   ]
 }

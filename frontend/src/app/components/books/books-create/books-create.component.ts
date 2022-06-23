@@ -24,6 +24,11 @@ export class BooksCreateComponent implements OnInit {
   createBook(book: Books): void {
     this.booksService.create(this.book).subscribe(() => {
       console.log('Produto Criado')
+
+      // Mostra SnackBar de sucesso ou erro
+      this.booksService.showMessage('Livro criado com sucesso!', false);
+
+      // Retorna para a página books 
       this.router.navigate(["books"]);
     })
   }

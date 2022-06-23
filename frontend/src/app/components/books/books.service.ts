@@ -1,3 +1,4 @@
+import { MatSnackBar } from '@angular/material/snack-bar';
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpClientModule } from '@angular/common/http'; //Import para requisições http
 import { catchError, map, Observable } from 'rxjs';//Import de Observable
@@ -12,7 +13,17 @@ export class BooksService {
   baseUrl = "http://localhost:3001/books";
 
   // Construtor levando um http para requisições
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient, private snackBar: MatSnackBar) { }
+
+  // Mostra mensagem de acerto em efetuar ação
+  showMessage(msg: string, isError: boolean): void{
+    this.snackBar.open(msg, 'X',{
+      duration: 5000,
+      horizontalPosition: "right",
+      verticalPosition: "top",
+      panelClass: isError ? ["msg-error"] : ["msg-success"] 
+    })
+  }
 
   // Método da service que irá fazer a Read no backend
   read(): Observable<Books[]>{

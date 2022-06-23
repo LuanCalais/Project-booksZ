@@ -24,6 +24,7 @@ import { MatSortModule } from '@angular/material/sort';
 import { HttpClientModule } from '@angular/common/http';
 import { BooksCreateComponent } from './components/books/books-create/books-create.component';
 import {MatSnackBar, MatSnackBarModule} from '@angular/material/snack-bar';
+import { BooksDeleteComponent } from './components/books/books-delete/books-delete.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,6 +35,7 @@ import {MatSnackBar, MatSnackBarModule} from '@angular/material/snack-bar';
     BooksCrudComponent,
     BooksReadComponent,
     BooksCreateComponent,
+    BooksDeleteComponent,
   ],
   imports: [
     BrowserModule,

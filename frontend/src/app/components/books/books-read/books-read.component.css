@@ -1,3 +1,11 @@
 .engloba-livros{
     margin-top: 20px;
 }
+
+.cdk-table{
+    width: -webkit-fill-available;
+}
+
+.delete i{
+    color: #e35e6b;
+}

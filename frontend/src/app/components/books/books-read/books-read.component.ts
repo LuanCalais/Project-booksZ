@@ -13,7 +13,7 @@ export class BooksReadComponent implements OnInit {
   book!: Books[]; // ! - Significa que não é obrigatoriamente iniciado
 
   // Aqui ficará a configuração das colunas
-  displayedColumns = ['id', 'name', 'price']; 
+  displayedColumns = ['id', 'name', 'price', 'action']; 
 
   constructor(private booksService: BooksService) { }
 

@@ -21,3 +21,7 @@ body {
     background-color: #e35e6b;
     color: #fff;
 }
+
+mat-sidenav-container{
+    background-color: #FFEEC3!important;
+}

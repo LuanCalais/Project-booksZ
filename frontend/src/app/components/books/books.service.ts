@@ -27,7 +27,14 @@ export class BooksService {
 
   // Método da service que irá fazer a Read no backend
   read(): Observable<Books[]>{
-    return this.http.get<Books[]>(this.baseUrl);
+    return this.http.get<Books[]>(this.baseUrl)
+  }
+
+  // Método que traz o produto pelo seu identificador
+  readById(id: string) : Observable<Books>{
+    // Monta url solicitando ID
+    const url = `${this.baseUrl}/${id}`
+    return this.http.get<Books>(url)
   }
 
   // Método da service que irá fazer o Create no backend
@@ -35,6 +42,17 @@ export class BooksService {
     return this.http.post<Books>(this.baseUrl, books).pipe(
       map(obj => obj)
     );
+  }
+
+  // Método da service que irá fazer a Deleção no backend pelo ID
+  delete(id: Number): Observable<Books>{
+
+    // Monta url mandando mandando id para deleção
+    const url = `${this.baseUrl}/${id}`
+
+    // Solicitação HTTP
+    return this.http.delete<Books>(url)
+
   }
 
 }

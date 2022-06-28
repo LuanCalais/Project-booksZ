@@ -1,0 +1,16 @@
+.mat-card-title{
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 0.5rem;
+}
+
+mat-form-field{
+    font-size: 1.05rem;
+    display: block;
+}
+
+.btn-cancel{
+    background-color: brown;
+    color: aliceblue;
+    margin-left: 1em;
+}

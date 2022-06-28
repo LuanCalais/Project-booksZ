@@ -1,1 +1,23 @@
-<p>books-delete works!</p>
+<mat-card>
+    <mat-card-title class="titulo">Deletar registro do livro</mat-card-title>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="Título" [value]="books.name" name="titulo" disabled>
+        </mat-form-field>
+
+        <mat-form-field>
+            <input matInput placeholder="Preço" [value]="books.price" name="price" disabled>
+        </mat-form-field>
+    </form>
+
+    <h3>Tem certeza que deseja deletar "{{books.name}}" do banco de dados? :(</h3>
+
+    <button mat-raised-button (click)="deleteBook()" color="primary">
+        Deletar
+    </button>
+
+    <button mat-raised-button color="secondary" (click)="cancel()" class="btn-cancel">
+        Cancelar
+    </button>
+
+</mat-card>

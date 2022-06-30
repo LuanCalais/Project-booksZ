@@ -16,9 +16,9 @@
       "id": 3
     },
     {
-      "id": 5,
-      "name": "Harry Potter",
-      "price": "123.23"
+      "id": 6,
+      "name": "O menino que desenhava monstros",
+      "price": "12,30"
     }
   ]
 }

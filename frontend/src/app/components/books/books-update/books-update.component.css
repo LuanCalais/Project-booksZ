@@ -8,8 +8,8 @@ mat-card button{
     width: 30%;
 }
 
-mat-card .btn-danger{
+mat-card .btn-cancelar{
     margin-top: 1em;
+    background-color: #EB4F4F;
     color: #fff;
-    background-color: rgb(235, 79, 79);
 }

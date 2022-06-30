@@ -55,4 +55,11 @@ export class BooksService {
 
   }
 
+  update(books: Books): Observable<Books>{
+    const url = `${this.baseUrl}/${books.id}`;
+
+    return this.http.put<Books>(url, books);
+
+  }
+
 }

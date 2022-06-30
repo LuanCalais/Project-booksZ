@@ -25,6 +25,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { BooksCreateComponent } from './components/books/books-create/books-create.component';
 import {MatSnackBar, MatSnackBarModule} from '@angular/material/snack-bar';
 import { BooksDeleteComponent } from './components/books/books-delete/books-delete.component';
+import { BooksUpdateComponent } from './components/books/books-update/books-update.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,6 +37,7 @@ import { BooksDeleteComponent } from './components/books/books-delete/books-dele
     BooksReadComponent,
     BooksCreateComponent,
     BooksDeleteComponent,
+    BooksUpdateComponent,
   ],
   imports: [
     BrowserModule,

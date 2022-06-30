@@ -9,3 +9,8 @@
 .delete i{
     color: #e35e6b;
 }
+
+.edit i{
+    color: #607e60;
+    margin-left: 1em;
+}

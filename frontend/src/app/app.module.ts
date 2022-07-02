@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { LOCALE_ID, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -26,6 +26,11 @@ import { BooksCreateComponent } from './components/books/books-create/books-crea
 import {MatSnackBar, MatSnackBarModule} from '@angular/material/snack-bar';
 import { BooksDeleteComponent } from './components/books/books-delete/books-delete.component';
 import { BooksUpdateComponent } from './components/books/books-update/books-update.component';
+import localeCoin from '@angular/common/locales/pt' //Importa em uma variável a localidade da moeda 
+import { registerLocaleData } from '@angular/common'; // Importa registrador de localização
+
+registerLocaleData(localeCoin); //Faz o registro da localização desejada 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -57,7 +62,10 @@ import { BooksUpdateComponent } from './components/books/books-update/books-upda
     MatInputModule,
     MatSnackBarModule
   ],
-  providers: [],
+  providers: [{
+    provide: LOCALE_ID,
+    useValue: 'pt-BR'
+  }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

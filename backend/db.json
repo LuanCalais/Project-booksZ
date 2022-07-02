@@ -14,6 +14,11 @@
       "name": "A insustentável leveza do ser ",
       "price": "19.99",
       "id": 3
+    },
+    {
+      "id": 4,
+      "name": "A biblia",
+      "price": "12.90"
     }
   ]
 }
